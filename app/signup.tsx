@@ -19,7 +19,17 @@ export default function Signup() {
       />
 <View style={{ padding: 20, gap: 20 }}>
 <TextInput
-          placeholder="Enter Email Here"
+          placeholder="Enter Your Name "
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+<TextInput
+          placeholder="Enter Your Email "
           style={{
             borderWidth: 1,
             height: 50,
@@ -38,7 +48,16 @@ export default function Signup() {
           }}
           onChangeText={(e)=> console.log(e)}
         />
-      
+      <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
       <MyButton title={"Register"} onPress={onRegister} />
       </View>
     </View>
