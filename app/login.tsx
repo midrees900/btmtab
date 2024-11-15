@@ -25,6 +25,7 @@ export default function Login() {
             paddingHorizontal: 20,
             borderRadius: 10,
           }}
+          onChangeText={(e)=> console.log(e)}
         />
 
 <TextInput
