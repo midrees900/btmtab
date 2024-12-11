@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Image, StyleSheet, Text, TextInput, View, ScrollView } from 'react-native'
 import React from 'react'
 import { useRouter } from 'expo-router'
 import MyButton from '@/components/MyButton'
@@ -17,6 +17,7 @@ export default function Signup() {
         style={{ width: "100%", height: 400 }}
         resizeMode="cover"
       />
+      <ScrollView showsVerticalScrollIndicator={false}>
 <View style={{ padding: 20, gap: 20 }}>
 <TextInput
           placeholder="Enter Your Name "
@@ -58,8 +59,81 @@ export default function Signup() {
           }}
           onChangeText={(e)=> console.log(e)}
         />
+
+        ///test scroll View
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
+        <TextInput
+          placeholder="Re Enter Your Password"
+          style={{
+            borderWidth: 1,
+            height: 50,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+          }}
+          onChangeText={(e)=> console.log(e)}
+        />
       <MyButton title={"Register"} onPress={onRegister} />
       </View>
+      </ScrollView>
     </View>
   )
 }
